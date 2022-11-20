@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
-import { Login } from 'src/app/models/login';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,8 +11,6 @@ export class LoginComponent implements OnInit {
 
   @ViewChild("username") userName !: ElementRef;
   @ViewChild("password") password !: ElementRef;
-
-  public userLogin !: Array<Login>;
 
   constructor(
     private _service: LoginService,
