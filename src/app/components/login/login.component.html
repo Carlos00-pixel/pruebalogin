@@ -1,0 +1,10 @@
+<div>
+    <form #loginForm="ngForm" class="custom-form">
+      <h1>Login</h1>
+      <label>Introduce el email:</label>
+      <input class="form-control" type="text" #username name="username" placeholder="User Name" required/>
+      <label>Introduce la contraseña:</label>
+      <input class="form-control" type="password" #password name="password" placeholder="Password" required/>
+      <button class="btn btn-info" (click)="login()">Log in</button>
+    </form>
+  </div>
